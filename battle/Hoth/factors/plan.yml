@@ -1,0 +1,40 @@
+---
+name: "Deploy compass"
+env: dev
+workers: 2
+debug: false
+error_ignore: false  
+desc: Start bootstrap and update/create project from git repo
+chdir: /root
+shell: /bin/bash
+
+- task: "Clear old build"
+    command: "/opt/clear_old_build.sh"
+	chdir: /opt
+	debug: true 
+	
+- task: "Prepare to build"
+    command: "/opt/bootstrap.sh"
+	shell: /bin/sh
+	chdir: /opt
+	error_ignore: true
+	
+- task: Sleep 10 sec
+    sleep: 10
+
+- task: "Add files"
+    git: https://github.com/versus/compass.git 
+	  branch: master
+	  path: /opt/compass
+	  keyfile: compass_git.pub
+	chdir: /opt
+	
+- task: "start to test"
+    #TODO: clear tmp file before start
+    command: /opt/start_test.sh
+	timeout: 20
+
+	
+
+	
+	
