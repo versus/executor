@@ -1,0 +1,63 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/asaskevich/govalidator",
+			"repository": "https://github.com/asaskevich/govalidator",
+			"vcs": "git",
+			"revision": "5b6e9375cbf581a9008064f7216e816b568d6daa",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/cloudfoundry-incubator/candiedyaml",
+			"repository": "https://github.com/cloudfoundry-incubator/candiedyaml",
+			"vcs": "git",
+			"revision": "99c3df83b51532e3615f851d8c2dbb638f5313bf",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/versus/easyssh",
+			"repository": "https://github.com/versus/easyssh",
+			"vcs": "git",
+			"revision": "bbef470f486ac474a1d24b381a5831f85fb22a2c",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/versus/yaml",
+			"repository": "https://github.com/versus/yaml",
+			"vcs": "git",
+			"revision": "1a6f069841556a7bcaff4a397ca6e8328d266c2f",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/crypto/curve25519",
+			"repository": "https://go.googlesource.com/crypto",
+			"vcs": "git",
+			"revision": "285fb2ed20d1dc450fc743a1b3ff7c36bef372b9",
+			"branch": "master",
+			"path": "/curve25519",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/crypto/ssh",
+			"repository": "https://go.googlesource.com/crypto",
+			"vcs": "git",
+			"revision": "285fb2ed20d1dc450fc743a1b3ff7c36bef372b9",
+			"branch": "master",
+			"path": "/ssh",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/hypersleep/easyssh.v0",
+			"repository": "https://gopkg.in/hypersleep/easyssh.v0",
+			"vcs": "git",
+			"revision": "1542e726150822ceaa64a8180298d0e5407c6989",
+			"branch": "v0",
+			"notests": true
+		}
+	]
+}
