@@ -6,6 +6,8 @@ import (
 	"os"
 
 	"Executor/fleet"
+
+	"github.com/versus/easyssh"
 )
 
 func main() {
@@ -19,7 +21,22 @@ func main() {
 	if hosts[0].IsHost() {
 		log.Println("Host validate\n")
 		log.Println(hosts[0])
+	}
 
+	ssh := &easyssh.MakeConfig{
+		User:   "versus",
+		Server: "hoth.server",
+		//Password: "123",
+		Key:  "./battle/Hoth/factors/hoth.key",
+		Port: "22",
+	}
+
+	response, err := ssh.Run("sudo ps ax")
+	// Handle errors
+	if err != nil {
+		panic("Can't run remote command: " + err.Error())
+	} else {
+		log.Println(response)
 	}
 
 }

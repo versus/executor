@@ -21,7 +21,7 @@
 			"importpath": "github.com/versus/easyssh",
 			"repository": "https://github.com/versus/easyssh",
 			"vcs": "git",
-			"revision": "bbef470f486ac474a1d24b381a5831f85fb22a2c",
+			"revision": "99bee016ef5a8957e0f61e777273eaa9d1f0c512",
 			"branch": "master",
 			"notests": true
 		},
@@ -37,7 +37,7 @@
 			"importpath": "golang.org/x/crypto/curve25519",
 			"repository": "https://go.googlesource.com/crypto",
 			"vcs": "git",
-			"revision": "285fb2ed20d1dc450fc743a1b3ff7c36bef372b9",
+			"revision": "47ff8dfbc528fea3003fc0ce2d88ffbbfbc46a43",
 			"branch": "master",
 			"path": "/curve25519",
 			"notests": true
@@ -46,7 +46,7 @@
 			"importpath": "golang.org/x/crypto/ssh",
 			"repository": "https://go.googlesource.com/crypto",
 			"vcs": "git",
-			"revision": "285fb2ed20d1dc450fc743a1b3ff7c36bef372b9",
+			"revision": "47ff8dfbc528fea3003fc0ce2d88ffbbfbc46a43",
 			"branch": "master",
 			"path": "/ssh",
 			"notests": true
